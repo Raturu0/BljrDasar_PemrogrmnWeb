@@ -1,0 +1,1162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300;500&family=Quicksand:wght@400;500;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* DI ATAS ADALAH RISET CSS */
+/* DI BAWAH SAYA MULAI DESAIN DENGAN METODE FIRST MOBILE DESAIN JADI LANGSUNG MAKE MEDIA QUERY */
+
+@media (min-width: 100px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  header nav {
+    width: 100%;
+    height: 80px;
+    background-color: #14197e;
+    display: flex;
+    position: fixed;
+  }
+  header nav section.kiri {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  header nav section.kiri div.logo {
+    padding-left: 5%;
+    height: 80%;
+    width: 30%;
+    display: flex;
+  }
+  header nav section.kiri div.logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header nav section.kiri div.nama {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav section.kiri div.nama h1.nyewa {
+    color: #ec0d1a;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  header nav section.kiri div.nama h1.lur {
+    color: #ffc700;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+  }
+  header nav section.hamburger {
+    width: 56px;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 5px;
+  }
+  header nav section.hamburger:hover {
+    cursor: pointer;
+  }
+  header nav section.hamburger div {
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  header nav section.tombolX {
+    height: 100%;
+    justify-content: start;
+    position: absolute;
+    right: 5%;
+  }
+  header nav section.tombolX:hover {
+    cursor: pointer;
+  }
+  header nav section.tombolX div {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    right: 10%;
+  }
+  header nav section.show {
+    width: 40%;
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    background-color: white;
+    opacity: 50;
+    border-radius: 20%;
+  }
+  header nav section.show ul {
+    padding: 20px;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav section.show ul li {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  header nav section.show ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  header nav section.windows {
+    width: 70%;
+    height: 100%;
+  }
+  header nav section.windows section {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+  header nav section.windows section ul {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+  }
+  header nav section.windows section ul li {
+    margin-right: 3%;
+    margin-left: 3%;
+    font-weight: bold;
+  }
+  header nav section.windows section ul li a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  header nav section.windows section ul li a:hover {
+    cursor: pointer;
+    transition: all;
+    opacity: 50%;
+    transition-duration: 0.7s;
+    background-color: orange;
+  }
+  header nav section.windows section ul li a h1 {
+    color: white;
+    transition: all;
+    animation-duration: 1s;
+  }
+  header nav section.windows section ul li a h1:hover {
+    color: black;
+  }
+  header section.ireng {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  header section.ireng section.gambar {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.gambar div {
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.gambar div img {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.teks {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.teks div.kami {
+    padding-top: 48px;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  header section.ireng section.teks div.kami h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+  header section.ireng section.teks div.fokus {
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  header section.ireng section.teks div.fokus h1 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+  header section.ireng section.teks div.button {
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+  }
+  header section.ireng section.teks div.button div {
+    display: flex;
+    justify-content: center;
+  }
+  header section.ireng section.teks div.button div button.sewa {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #1400ff;
+    font-weight: bold;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    border: none;
+  }
+  header section.ireng section.teks div.button div button.sewa h1 {
+    color: white;
+  }
+  header section.ireng section.teks div.button div button.bantuan {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border: solid;
+    border-color: blue;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 8%;
+    padding-left: 8%;
+    border-radius: 20px;
+  }
+  header section.ireng section.teks div.button div button.bantuan h1 {
+    color: black;
+  }
+  main {
+    background-color: #161f71;
+  }
+  main div#content article#layanan {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 20%;
+    padding-bottom: 25%;
+  }
+  main div#content article#layanan section.apasaja h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  main div#content article#layanan section.card {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 80%;
+    margin: 10% auto;
+    background: linear-gradient(to bottom, #6058c3, transparent);
+    height: -moz-max-content;
+    height: max-content;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  main div#content article#layanan section.card:hover {
+    background-color: blue;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.7s;
+  }
+  main div#content article#layanan section.card div.gambar {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    height: 30%;
+  }
+  main div#content article#layanan section.card div.gambar img {
+    width: 100%;
+    height: 100%;
+  }
+  main div#content article#layanan section.card div.judul {
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.card div.judul h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+  }
+  main div#content article#layanan section.card div.pembatas {
+    background-color: gray;
+    height: 3%;
+    width: 100%;
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.card div.teks {
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main div#content article#layanan section.card div.teks h1 {
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+  }
+  main div#content article#layanan section.card div.teks div.button {
+    text-align: center;
+    padding-top: 5%;
+  }
+  main div#content article#layanan section.card div.teks div.button a button {
+    background-color: blue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 13%;
+    padding-right: 13%;
+    border-radius: 10px;
+  }
+  main div#content article#layanan section.card div.teks div.button a button h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  main div#content article#layanan section.card div.teks div.button a button:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.7s;
+  }
+  main div#content article#partner {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 25%;
+    background: linear-gradient(to bottom, #7c00f8 0%, #7c00f8 100%);
+  }
+  main div#content article#partner section.judul div h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  main div#content article#partner section.pembungkusPartner {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main div#content article#partner section.pembungkusPartner div.logo {
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
+  }
+  main div#content article#partner section.pembungkusPartner div.logo img {
+    width: 100%;
+    height: 100%;
+  }
+  main aside {
+    background-color: white;
+    margin-top: 0%;
+    padding-top: 20%;
+    padding-bottom: 25%;
+  }
+  main aside section.card div.pembungkusGambar {
+    display: flex;
+    justify-content: center;
+  }
+  main aside section.card div.pembungkusGambar div.gambar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 50%;
+  }
+  main aside section.card div.pembungkusGambar div.gambar img {
+    width: 100%;
+    height: 100%;
+  }
+  main aside section.card div.nama {
+    margin-top: 5%;
+  }
+  main aside section.card div.nama h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  main aside section.card div.desk {
+    padding: 5%;
+  }
+  main aside section.card div.desk h1 {
+    text-align: center;
+    font-size: 15px;
+  }
+  footer.hp {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  footer.hp section {
+    width: 100%;
+    height: 100%;
+    padding: 0% 10% 0% 10%;
+  }
+  footer.hp section div {
+    display: flex;
+    justify-content: center;
+  }
+  footer.hp section div h1 {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  main div#content article#layanan {
+    padding-top: 20%;
+    padding-bottom: 25%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  main div#content article#layanan section.apasaja {
+    margin-bottom: 10%;
+  }
+  main div#content article#layanan section.apasaja h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  main div#content article#layanan section.pembungkusCard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main div#content article#layanan section.pembungkusCard section.card {
+    margin-top: 0%;
+    width: 48%;
+    background: linear-gradient(to bottom, #6058c3, transparent);
+    height: 450px;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all;
+  }
+  main div#content article#layanan section.pembungkusCard section.card:hover {
+    background-color: blue;
+    cursor: pointer;
+    animation-duration: 1s;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.gambar {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    height: 30%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.gambar img {
+    width: 100%;
+    height: 100%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.judul {
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.judul h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.pembatas {
+    background-color: gray;
+    height: 3%;
+    width: 100%;
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks {
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks h1 {
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (min-width: 770px) {
+  header nav section.kiri {
+    width: 30%;
+  }
+  header nav section.hamburger {
+    display: none;
+  }
+  header nav section.windows {
+    display: block;
+  }
+  header section.ireng {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  header section.teks {
+    margin: auto;
+  }
+  header section.teks div.kami h1 {
+    font-size: 30px;
+  }
+  article#partner {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30%;
+    background: linear-gradient(to bottom, #7c00f8 0%, #7c00f8 100%);
+  }
+  article#partner section.judul div h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  article#partner section.pembungkusPartner {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  article#partner section.pembungkusPartner div.logo {
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
+  }
+  article#partner section.pembungkusPartner div.logo img {
+    width: 100%;
+    height: 100%;
+  }
+  footer.hp {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  footer.hp section {
+    width: 100%;
+    height: 100%;
+    padding: 0% 10% 0% 10%;
+  }
+  footer.hp section div {
+    display: flex;
+    justify-content: center;
+  }
+  footer.hp section div h1 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  header nav {
+    width: 100%;
+    height: 80px;
+    background-color: #14197e;
+    display: flex;
+    position: fixed;
+  }
+  header nav section.kiri {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  header nav section.kiri div.logo {
+    padding-left: 5%;
+    height: 80%;
+    width: 30%;
+    display: flex;
+  }
+  header nav section.kiri div.logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header nav section.kiri div.nama {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav section.kiri div.nama h1.nyewa {
+    color: #ec0d1a;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  header nav section.kiri div.nama h1.lur {
+    color: #ffc700;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+  }
+  header nav section.hamburger {
+    width: 56px;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 5px;
+  }
+  header nav section.hamburger:hover {
+    cursor: pointer;
+  }
+  header nav section.hamburger div {
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  header nav section.tombolX {
+    height: 100%;
+    justify-content: start;
+    position: absolute;
+    right: 5%;
+  }
+  header nav section.tombolX:hover {
+    cursor: pointer;
+  }
+  header nav section.tombolX div {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    right: 10%;
+  }
+  header nav section.show {
+    width: 40%;
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    background-color: white;
+    opacity: 50;
+    border-radius: 20%;
+  }
+  header nav section.show ul {
+    padding: 20px;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav section.show ul li {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  header nav section.show ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  header nav section.windows {
+    width: 70%;
+    height: 100%;
+  }
+  header nav section.windows section {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+  header nav section.windows section ul {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+  }
+  header nav section.windows section ul li {
+    margin-right: 3%;
+    margin-left: 3%;
+    font-weight: bold;
+  }
+  header nav section.windows section ul li a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  header nav section.windows section ul li a:hover {
+    cursor: pointer;
+    transition: all;
+    opacity: 50%;
+    transition-duration: 0.7s;
+    background-color: orange;
+  }
+  header nav section.windows section ul li a h1 {
+    color: white;
+    transition: all;
+    animation-duration: 1s;
+  }
+  header nav section.windows section ul li a h1:hover {
+    color: black;
+  }
+  header section.ireng {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  header section.ireng section.gambar {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.gambar div {
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.gambar div img {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.teks {
+    width: 100%;
+    height: 100%;
+  }
+  header section.ireng section.teks div.kami {
+    padding-top: 48px;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  header section.ireng section.teks div.kami h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+  header section.ireng section.teks div.fokus {
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  header section.ireng section.teks div.fokus h1 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+  header section.ireng section.teks div.button {
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+  }
+  header section.ireng section.teks div.button div {
+    display: flex;
+    justify-content: center;
+  }
+  header section.ireng section.teks div.button div button.sewa {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #1400ff;
+    font-weight: bold;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    border: none;
+  }
+  header section.ireng section.teks div.button div button.sewa:hover {
+    opacity: 50%;
+    transition: all;
+    transition-duration: 0.7s;
+    cursor: pointer;
+  }
+  header section.ireng section.teks div.button div button.sewa h1 {
+    color: white;
+    font-size: 25px;
+  }
+  header section.ireng section.teks div.button div button.bantuan {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border: solid;
+    border-color: blue;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 8%;
+    padding-left: 8%;
+    border-radius: 20px;
+  }
+  header section.ireng section.teks div.button div button.bantuan:hover {
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.7s;
+    opacity: 50%;
+  }
+  header section.ireng section.teks div.button div button.bantuan h1 {
+    color: black;
+    font-size: 25px;
+  }
+  main {
+    display: flex;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  main div#content {
+    width: 80%;
+  }
+  main div#content article#layanan {
+    width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 20%;
+    padding-bottom: 25%;
+  }
+  main div#content article#layanan section.apasaja h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  main div#content article#layanan section.pembungkusCard {
+    display: flex;
+    margin-top: -5%;
+    flex-wrap: wrap;
+  }
+  main div#content article#layanan section.pembungkusCard section.card {
+    padding-top: 5%;
+    width: 30%;
+    margin: 3% auto;
+    background: linear-gradient(to bottom, #6058c3, transparent);
+    height: -moz-max-content;
+    height: max-content;
+    border-radius: 40px;
+    padding-bottom: 3%;
+    overflow: hidden;
+  }
+  main div#content article#layanan section.pembungkusCard section.card:hover {
+    background-color: blue;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.7s;
+  }
+  main div#content article#layanan section.pembungkusCard section.card:hover div.pembatas {
+    background-color: black;
+    transition: all;
+    transition-duration: 0.7s;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.gambar {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    height: 30%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.gambar img {
+    width: 100%;
+    height: 100%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.judul {
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.judul h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.pembatas {
+    background-color: gray;
+    height: 3%;
+    width: 100%;
+    margin-top: 5%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks {
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks h1 {
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks div.button {
+    text-align: center;
+    padding-top: 5%;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks div.button a button {
+    background-color: blue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 13%;
+    padding-right: 13%;
+    border-radius: 10px;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks div.button a button h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  main div#content article#layanan section.pembungkusCard section.card div.teks div.button a button:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.7s;
+  }
+  main div#content article#partner {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 25%;
+    background: linear-gradient(to bottom, #7c00f8 0%, #7c00f8 100%);
+  }
+  main div#content article#partner section.judul div h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  main div#content article#partner section.pembungkusPartner {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main div#content article#partner section.pembungkusPartner div.logo {
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
+  }
+  main div#content article#partner section.pembungkusPartner div.logo img {
+    width: 100%;
+    height: 100%;
+  }
+  main aside {
+    background-color: rgb(224, 214, 214);
+    width: 20%;
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+  main aside section.card {
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0%;
+  }
+  main aside section.card div.pembungkusGambar {
+    display: flex;
+    justify-content: center;
+  }
+  main aside section.card div.pembungkusGambar div.gambar {
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 50%;
+  }
+  main aside section.card div.pembungkusGambar div.gambar img {
+    width: 100%;
+    height: 100%;
+  }
+  main aside section.card div.nama h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  main aside section.card div.desk {
+    font-size: 10px;
+    padding: 5% 10% 5% 10%;
+  }
+  main aside section.card div.desk h1 {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
